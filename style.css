@@ -1,0 +1,198 @@
+
+/* tablets */
+@media (max-width: 900px) {
+
+    .resumen {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+}
+/* móviles */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    td, th {
+        padding: 8px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+/* base */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #1f2937;
+}
+
+/* contenedor */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+/* título */
+/* barra de título tipo dashboard */
+h1 {
+    background: #60c377;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* resumen dashboard */
+.resumen {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* formulario */
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3b82f6;
+}
+
+/* botón */
+button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* encabezado de tabla minimalista */
+th {
+    background: transparent;
+    color: #111827;
+    border-bottom: 2px solid #000;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* botones acciones */
+td button {
+    padding: 6px 10px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+td button:last-child {
+    background: #ef4444;
+}
+
+td button:last-child:hover {
+    background: #dc2626;
+}
+/* alinear columna de acciones a la derecha */
+td:last-child {
+    text-align: right;
+}
+
+/* opcional: separar botones del borde */
+th:last-child {
+    text-align: right;
+    padding-right: 20px;
+}
+/* efecto hover en filas */
+tr:hover {
+    background: #f3f4f6;
+    transition: 0.2s;
+}
+/* stock bajo */
+.bajo {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+/* stock medio */
+.medio {
+    color: #f59e0b;
+    font-weight: bold;
+}
+
+/* stock alto */
+.alto {
+    color: #16a34a;
+    font-weight: bold;
+}

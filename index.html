@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <button id="exportarExcelBtn">Exportar a Excel</button>
+    <button id="exportarBtn">Exportar JSON</button>
+    <input type="file" id="importarInput">
+   
+    <h1>Inventario</h1>
+
+    <!-- resumen -->
+    <div class="resumen">
+
+        <div class="card">
+            <h3>Total productos</h3>
+            <p id="totalProductos">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Total unidades</h3>
+            <p id="totalUnidades">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Valor total</h3>
+            <p id="valorTotal">$0</p>
+        </div>
+
+    </div>
+
+    <!-- formulario -->
+    <form id="productForm">
+
+        <input type="text" id="nombre" placeholder="Producto" required>
+        <input type="number" id="cantidad" placeholder="Cantidad" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+
+        <button type="submit">Guardar</button>
+
+    </form>
+
+    <hr>
+
+    <!-- tabla -->
+    <table>
+
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaProductos"></tbody>
+
+    </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
